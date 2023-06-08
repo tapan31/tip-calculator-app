@@ -1,0 +1,286 @@
+body {
+  background-color: hsl(180, 58%, 85%);
+  margin: 0;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 6px 5px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: rgb(93, 156, 157);
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 60%;
+  height: 70%;
+  padding: 13px 20px;
+}
+
+.input input {
+  padding: 10px 5px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  background-color: #e2ecf5;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(40, 133, 142);
+  text-align: right;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container > img {
+  position: absolute;
+  left: 0.4rem;
+  z-index: 1;
+}
+
+.input-container > input {
+  padding: 10px 5px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  background-color: #e2ecf5;
+  font-size: large;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.people-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.people-container > img {
+  position: absolute;
+  left: 0.4rem;
+}
+
+.people-container > input {
+  width: 100%;
+}
+
+label {
+  color: rgb(44, 133, 116);
+  opacity: 0.8;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+div.bill,
+div.people {
+  display: flex;
+  flex-direction: column;
+}
+
+div.tips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+div.tips input {
+  border-radius: 3px;
+  margin: 0;
+  padding: 10px;
+  width: 75px;
+  height: 18px;
+  font-size: medium;
+}
+
+div span.tip {
+  background-color: hsl(183, 32%, 24%);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: large;
+}
+
+div span.tip:hover,
+::selection {
+  background-color: hsl(183, 43%, 70%);
+  color: black;
+}
+
+.output {
+  background-color: hsl(183, 100%, 15%);
+  width: 60%;
+  height: 70%;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.tipAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+.btn {
+  display: block;
+  background-color: hsl(186, 27%, 66%);
+  width: 100%;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  background-color: hsl(187, 44%, 81%);
+}
+
+p.amount {
+  font-size: 35px;
+  font-weight: bold;
+  color: hsl(151.5deg 31.16% 62.3%);
+}
+
+.person {
+  color: white;
+  opacity: 0.8;
+  display: block;
+}
+
+.fa-dollar-sign {
+  font-size: 32px;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-message {
+  display: inline !important;
+  color: red;
+  font-weight: bold;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+@media (max-width: 1100px) {
+  p.amount {
+    font-size: 20px;
+  }
+  .fa-dollar-sign {
+    font-size: 20px;
+  }
+  div span.tip {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin-top: 10px auto;
+    padding-top: 20px;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+  }
+  .card {
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 100%;
+  }
+  .input {
+    height: 50%;
+    width: 100%;
+  }
+  .output {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .total,
+  .tipAmount {
+    line-height: normal;
+  }
+  .btn {
+    position: relative;
+    top: 10%;
+  }
+  p.amount {
+    font-size: 20px;
+  }
+  .fa-dollar-sign {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>Tip calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1>SPLI</h1>
+        <h1>TTER</h1>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="input">
+            <div class="bill">
+              <div class="label-container">
+                <label for="bill">Bill </label>
+                <span id="error" style="display: none"
+                  >Enter a positive value</span
+                >
+              </div>
+              <div class="input-container">
+                <img src="images/icon-dollar.svg" alt="dollar" />
+                <input type="number" id="bill" />
+              </div>
+            </div>
+            <div>
+              <div class="label-container">
+                <label for="tip">Select Tip %</label>
+                <span id="error3" style="display: none"
+                  >Enter a positive value</span
+                >
+              </div>
+              <div class="tips">
+                <span class="tip">5%</span>
+                <span class="tip">10%</span>
+                <span class="tip">15%</span>
+                <span class="tip">25%</span>
+                <span class="tip">50%</span>
+                <input id="custom-tip" placeholder="Custom" type="number" />
+              </div>
+            </div>
+            <div class="people">
+              <div class="label-container">
+                <label for="people">Number of People </label>
+                <span id="error1" style="left: 26%; display: none"
+                  >Enter a positive value</span
+                >
+              </div>
+              <div class="people-container">
+                <img src="images/icon-person.svg" alt="person" />
+                <input type="number" id="people" />
+              </div>
+            </div>
+          </div>
+          <div class="output">
+            <div class="tipAmount">
+              <p>
+                Tip Amount
+                <span class="person">/ person</span>
+              </p>
+              <p class="amount" id="tip-amount">
+                <i class="fa-solid fa-dollar-sign"></i> 0.00
+              </p>
+            </div>
+            <div class="total">
+              <p>
+                Total
+                <span class="person">/ person</span>
+              </p>
+              <p class="amount" id="total-amount">
+                <i class="fa-solid fa-dollar-sign"></i> 0.00
+              </p>
+            </div>
+            <button class="btn" id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
