@@ -4,6 +4,8 @@ The Tip Calculator is a simple web application that helps you calculate the tip 
 
 ![Tip Calculator](./images/tip-calculator.png)
 
+## [Live Preview](https://tapan31.github.io/tip-calculator-app/)
+
 ## Features
 
 - Calculate tip amount based on bill total and selected tip percentage
