@@ -111,6 +111,7 @@ label {
 
 .input input:focus {
   outline: none;
+  border: 2px solid rgb(164, 226, 226);
 }
 
 div.bill,
